@@ -1,14 +1,14 @@
 var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
-var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
+var maleNames = ['Marian, Piotrek', 'Marek', 'Arek', 'Jarek'];
 
 var allNames = femaleNames.concat(maleNames);
 
 var newName = 'Marian';
 
-var updateNames = allNames.push(newName);
+var updatedNames = allNames.push(newName);
 
 function updateNames() {
-    if (!(allNames.indexOf(newName) === newName)) {
-       return updateNames;
+    if ([allNames.indexOf(newName) === -1]) {
+       return updatedNames;
     }
 }
